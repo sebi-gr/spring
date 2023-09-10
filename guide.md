@@ -1,6 +1,5 @@
-**1	Container, Dependency, and IOC**
+# 1	Container, Dependency, and IOC
 
-Certainly, here are all the questions along with their answers:
 
 1.1 What is dependency injection and what are the advantages?
 
@@ -231,7 +230,7 @@ In `@Value` expressions:
 
 The choice between `$` and `#` depends on whether you're accessing simple property values or performing more advanced operations with SpEL.
 
-**2	Aspect Oriented Programming**
+# 2	Aspect Oriented Programming
 
 2.1 What is the concept of AOP? Which problem does it solve? What is a cross-cutting concern?
 
@@ -281,7 +280,7 @@ The `JoinPoint` argument in AOP advice methods provides information about the cu
 
 A `ProceedingJoinPoint` is a special type of `JoinPoint` used in around advice. It represents the join point at which the advice is being invoked and allows you to control the execution of the advised method. You can choose to proceed with the method's execution or modify its behavior by invoking `proceed()` on the `ProceedingJoinPoint`. It's typically used when you want to intercept and possibly modify the method's input, output, or execution flow.
 
-**3	Data Management: JDBC**
+# 3	Data Management: JDBC
 
 3.1 What is the difference between checked and unchecked exceptions?
 
@@ -322,7 +321,7 @@ The JDBC template typically acquires and releases a connection for every method 
 
 The JDBC template supports generic queries by allowing you to specify `RowMapper` implementations that map database rows to Java objects. You can define custom `RowMapper` instances for each query, and the JDBC template uses these mappers to return objects or lists/maps of objects, depending on the query result. The returned data can be of any Java class, making it suitable for handling different types of queries.
 
-**4	Data Management: Transactions**
+# 4	Data Management: Transactions
 
 4.1 What is a transaction? What is the difference between a local and a global transaction?
 
@@ -402,7 +401,7 @@ You can use the `JpaTransactionManager` as the `PlatformTransactionManager` for 
 
 To use JPA with Spring, you need to configure an `EntityManagerFactory`, define JPA entities, set up transaction management, and create repositories. Spring Boot simplifies this process by providing auto-configuration and sensible defaults, allowing you to focus on application-specific logic instead of extensive configuration.
 
-**5	Spring Data JPA**
+# 5	Spring Data JPA
 
 5.1 What is a Repository interface?
 
@@ -424,7 +423,7 @@ Spring Data repositories are implemented by Spring at runtime using dynamic prox
 
 The `@Query` annotation is used in Spring Data repositories to define custom queries using a query language specific to the underlying data store, such as JPQL (Java Persistence Query Language) for JPA repositories or MongoDB queries for MongoDB repositories. It allows developers to write custom query statements and associate them with repository methods, providing flexibility when the automatic query derivation based on method names and conventions is not sufficient.
 
-**6	Spring MVC and the Web Layer**
+# 6	Spring MVC and the Web Layer
 
 6.1 MVC is an abbreviation for a design pattern. What does it stand for, and what is the idea behind it?
 
@@ -485,7 +484,7 @@ Controller methods can have various return types, including:
 - JSON or XML data: When building RESTful services using `@ResponseBody`.
 - Redirect view names or URLs: For redirecting requests to other URLs or controllers.
 
-**7	Security**
+# 7	Security
 
 7.1 Extra: Spring Security JSP tag library
 
@@ -538,7 +537,7 @@ Method security allows you to control access to specific methods within your app
 
 The key difference is that `@PreAuthorized` provides more expressive power by allowing complex SpEL expressions to define access control conditions, while `@RolesAllowed` is a simpler annotation focused on role-based access control. In Spring Security applications, `@PreAuthorized` is often preferred for its flexibility.
 
-**8	REST**
+# 8 REST
 
 8.1 What does REST stand for?
 
@@ -628,7 +627,7 @@ For a Spring REST application, you can use the `spring-boot-starter-web` starter
 
 The advantages of the `RestTemplate` in Spring include its ease of use for making HTTP requests to remote services, support for various HTTP methods, and the ability to handle response serialization/deserialization, making it
 
-**9	Testing**
+# 9	Testing
 
 9.1 Do you use Spring in a unit test?
 
@@ -671,7 +670,7 @@ Spring Boot simplifies writing tests by providing auto-configuration for various
 - `@SpringBootTest` is used to bootstrap a Spring Boot application context for integration testing. It loads the application context, including the configuration defined in the main application class annotated with `@SpringBootApplication` or `@SpringBootConfiguration`.
 - `@SpringBootApplication` or `@SpringBootConfiguration` is typically used in the main application class to define the application's configuration. When testing with `@SpringBootTest`, it ensures that the main application's configuration is included in the test application context, allowing you to test the application in a similar context as it runs in production.
 
-**10	Spring Boot Intro**
+# 10	Spring Boot Intro
 
 10.1 What is Spring Boot?
 
@@ -753,7 +752,7 @@ Spring Boot supports various embedded containers, including Apache Tomcat, Jetty
 
 , and Undertow. You can choose the embedded container that best fits your application's needs, and Spring Boot will auto-configure it accordingly.
 
-**11	Spring Boot Auto Configuration**
+# 11	Spring Boot Auto Configuration
 
 11.1 How does Spring Boot know what to configure?
 
@@ -798,7 +797,7 @@ The `@Conditional` annotations in Spring Boot allow you to conditionally enable 
 
 These annotations allow you to control when certain configurations should be applied, making it easier to customize the behavior of your Spring Boot application.
 
-**12	Spring Boot Actuator**
+# 12	Spring Boot Actuator
 
 12.1 Extra: Getting started
 
@@ -886,7 +885,7 @@ Leveraging a third-party external monitoring system is important for several rea
 
 Using an external monitoring system complements Spring Boot Actuator's built-in capabilities and ensures comprehensive monitoring and management of your application in production.
 
-**13	Spring Boot Testing**
+# 13	Spring Boot Testing
 
 13.1 Extra: What are the Spring Boot Testing basics?
 
