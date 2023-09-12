@@ -80,7 +80,7 @@ Scopes in Spring define the lifecycle of a bean. The default scope is "singleton
 
 1.13 Are beans lazily or eagerly instantiated by default? How do you alter this behavior?
 
-Beans are lazily instantiated by default, meaning they are created when first requested. To alter this behavior, you can use the `@Lazy` annotation.
+Beans are eagerly instantiated by default. To alter this behavior, you can use the `@Lazy` annotation.
 
 1.14 What is a property source? How would you use @PropertySource?
 
